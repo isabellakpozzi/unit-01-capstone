@@ -1,0 +1,130 @@
+.recipe-form-card {
+  max-width: 480px;
+  margin: 0 auto;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-xl) var(--spacing-lg);
+}
+
+.recipe-form-heading {
+  text-align: center;
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-lg);
+}
+
+.recipe-form-card textarea {
+  resize: vertical;
+  min-height: 72px;
+}
+
+/* ---- Repeatable rows: ingredients and instructions ---- */
+.repeatable-row {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-xs);
+}
+
+.repeatable-row input {
+  width: auto;
+}
+
+.repeatable-row-quantity {
+  flex: 0 0 35%;
+}
+
+.repeatable-row-name {
+  flex: 1;
+}
+
+.step-number {
+  flex: 0 0 auto;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  min-width: 20px;
+}
+
+.add-row-button {
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  cursor: pointer;
+  padding: var(--spacing-xs) 0;
+  width: auto;
+}
+
+.add-row-button:hover {
+  text-decoration: underline;
+}
+
+/* ---- Tag chip input ---- */
+.tag-input-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing-xs);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background-color: var(--color-bg-card);
+}
+
+.tag-input-wrapper:focus-within {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 1px;
+}
+
+.tag-pill-removable {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.tag-pill-removable button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-tag-text);
+  font-size: 0.75em;
+  padding: 0;
+  width: auto;
+  line-height: 1;
+}
+
+.tag-input {
+  flex: 1;
+  min-width: 120px;
+  border: none;
+  padding: var(--spacing-xs) 0;
+}
+
+.tag-input:focus {
+  outline: none;
+}
+
+.recipe-form-image-preview {
+  position: relative;
+  margin-top: var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  background-color: var(--color-border);
+}
+
+.recipe-form-image-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.recipe-form-image-preview .icon-button {
+  position: absolute;
+  top: var(--spacing-xs);
+  right: var(--spacing-xs);
+  background-color: var(--color-bg-card);
+  border-radius: var(--radius-sm);
+}
