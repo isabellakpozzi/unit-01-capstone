@@ -36,6 +36,15 @@
   background-color: var(--color-tag-bg);
 }
 
+.btn-dark {
+  background-color: transparent;
+  color: var(--color-secondary-border);
+  border-color: var(--color-secondary-border);
+}
+.btn-dark:hover:not(:disabled) {
+  background-color: var(--color-tag-bg);
+}
+
 .btn-danger {
   background-color: var(--color-error);
   color: var(--color-text-on-primary);

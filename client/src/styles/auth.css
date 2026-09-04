@@ -77,9 +77,14 @@
   margin-top: var(--spacing-xs);
 }
 
-/* Tablet and up: a touch more breathing room, matches Figma's wider desktop cards */
 @media (min-width: 768px) {
   .auth-card {
     padding: var(--spacing-xl) var(--spacing-xl);
+  }
+}
+ 
+@media (min-width: 1024px) {
+  .auth-card {
+    max-width: 440px;
   }
 }

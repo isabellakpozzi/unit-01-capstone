@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
 import Button from "../components/Button";
+import Breadcrumb from "../components/Breadcrumb";
 
 export default function Profile() {
   const { user, logout } = useAuth();
@@ -13,6 +14,7 @@ export default function Profile() {
 
   return (
     <div className="page container">
+      <Breadcrumb items={[{ label: "Home", to: "/dashboard" }, { label: "Your Profile" }]} />
       <h1>Your Profile</h1>
 
       <div className="form-field">

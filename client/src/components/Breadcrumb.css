@@ -1,0 +1,37 @@
+.breadcrumb {
+  display: none; /* hidden on mobile, per design */
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+@media (min-width: 768px) {
+  .breadcrumb {
+    display: flex;
+  }
+}
+
+.breadcrumb-item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.breadcrumb-item a {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-item span[aria-current="page"] {
+  color: var(--color-text);
+}
+
+.breadcrumb-separator {
+  color: var(--color-text-secondary);
+}
