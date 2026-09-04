@@ -24,7 +24,7 @@ export default function ConfirmDialog({
         <h2 className="confirm-title">{title}</h2>
         <p className="confirm-message">{message}</p>
         <div className="confirm-actions">
-          <Button variant="danger" onClick={onConfirm}>
+          <Button variant="primary" onClick={onConfirm}>
             {confirmLabel}
           </Button>
           <Button variant="secondary" onClick={onCancel}>

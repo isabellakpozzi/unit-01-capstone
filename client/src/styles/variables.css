@@ -7,12 +7,12 @@
  
   /* ---- Color: text ---- */
   --color-text: #1A1A1A;
-  --color-text-secondary: #6B6B6B;
+  --color-text-secondary: #707070;
   --color-text-on-primary: #FFFFFF;
  
   /* ---- Color: brand / actions ---- */
-  --color-primary: #96cc67;        /* olive green buttons */
-  --color-primary-hover: #6ba539;
+  --color-primary: #6ba539;        /* olive green buttons */
+  --color-primary-hover: #96cc67;
   --color-secondary-border: #57852f; /* outline buttons like "Cancel" */
  
   /* ---- Color: feedback ---- */
@@ -27,8 +27,8 @@
   --color-tag-text: #866208;
  
   /* ---- Typography ---- */
-  --font-heading: "Georgia", serif;      
-  --font-body: "Helvetica Neue", Arial, sans-serif; 
+  --font-heading: "Open Sans", sans-serif;      
+  --font-body: "Open Sans", sans-serif; 
  
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;

@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import ProtectedRoute from "./components/ProtectedRoute";
+import AppLayout from "./components/AppLayout";
 import Splash from "./components/Splash";
 import { useAuth } from "./contexts/AuthContext";
 import Landing from "./pages/Landing";
@@ -10,6 +11,7 @@ import RecipeDetail from "./pages/RecipeDetail";
 import Dashboard from "./pages/Dashboard";
 import CreateRecipe from "./pages/CreateRecipe";
 import EditRecipe from "./pages/EditRecipe";
+import Profile from "./pages/Profile";
 
 export default function App() {
   const { isLoading } = useAuth();
@@ -23,13 +25,17 @@ export default function App() {
       <Route path="/" element={<Landing />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
-      <Route path="/recipes" element={<RecipeList />} />
-      <Route path="/recipes/:id" element={<RecipeDetail />} />
 
-      <Route element={<ProtectedRoute />}>
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/recipes/new" element={<CreateRecipe />} />
-        <Route path="/recipes/:id/edit" element={<EditRecipe />} />
+      <Route element={<AppLayout />}>
+        <Route path="/recipes" element={<RecipeList />} />
+        <Route path="/recipes/:id" element={<RecipeDetail />} />
+
+        <Route element={<ProtectedRoute />}>
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/recipes/new" element={<CreateRecipe />} />
+          <Route path="/recipes/:id/edit" element={<EditRecipe />} />
+          <Route path="/profile" element={<Profile />} />
+        </Route>
       </Route>
     </Routes>
   );

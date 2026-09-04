@@ -20,8 +20,8 @@ export default function RecipeDetail() {
 
   return (
     <div className="page container">
-      <h1>{recipe.title}</h1>
       {recipe.image && <img src={recipe.image} alt={recipe.title} />}
+      <h1>{recipe.title}</h1>
       <p>{recipe.description}</p>
 
       <h2>Ingredients</h2>
@@ -40,7 +40,7 @@ export default function RecipeDetail() {
           ))}
       </ol>
 
-      <p>Tags:</p>
+      <h2>Tags:</h2>
       <div className="recipe-card-tags">
         {recipe.tags.map((tag) => (
           <span key={tag} className="tag-pill">{tag}</span>

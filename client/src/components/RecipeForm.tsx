@@ -1,6 +1,7 @@
 import { useState, type FormEvent, type KeyboardEvent } from "react";
 import Button from "./Button";
 import type { Recipe, RecipeInput, Ingredient } from "../types";
+import { BsTrash3 } from "react-icons/bs";
 import "./RecipeForm.css";
 
 interface RecipeFormProps {
@@ -135,8 +136,6 @@ export default function RecipeForm({
 
     setIsSubmitting(true);
     try {
-      // Commit any in-progress tag text (e.g. user typed a tag but didn't
-      // press Enter before clicking Save)
       const finalTags = tagInput.trim() && !tags.includes(tagInput.trim())
         ? [...tags, tagInput.trim()]
         : tags;
@@ -322,7 +321,7 @@ export default function RecipeForm({
                 onClick={() => setImage("")}
                 aria-label="Remove image"
               >
-                🗑️
+                <BsTrash3 />
               </button>
             </div>
           )}

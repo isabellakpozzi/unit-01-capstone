@@ -31,7 +31,7 @@ export default function RecipeCard({ recipe, variant, onEdit, onDelete }: Recipe
       </div>
 
       <div className="recipe-card-body">
-        <h3 className="recipe-card-title">{recipe.title}</h3>
+        <h2 className="recipe-card-title">{recipe.title}</h2>
         <p className="recipe-card-date">Created on {formatDate(recipe.createdAt)}</p>
 
         {recipe.tags.length > 0 && (

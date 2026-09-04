@@ -62,9 +62,6 @@ export default function Dashboard() {
     <div className="page container">
       <div className="dashboard-header">
         <p>Welcome back! Manage your recipes or add a new one.</p>
-        <button type="button" onClick={logout} className="icon-button">
-          Logout
-        </button>
       </div>
 
       {successMessage && <SuccessBanner message={successMessage} />}
@@ -91,6 +88,9 @@ export default function Dashboard() {
       <div className="dashboard-actions">
         <Button variant="primary" onClick={() => navigate("/recipes/new")}>
           Create Recipe
+        </Button>
+        <Button variant="secondary" onClick={() => navigate("/recipes")}>
+          Browse Recipes
         </Button>
       </div>
 
