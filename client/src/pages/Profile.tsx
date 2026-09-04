@@ -29,9 +29,7 @@ export default function Profile() {
       </div>
 
       <p className="recipe-list-status">
-        Editing your profile and deleting your account aren't available yet —
-        the API doesn't currently have endpoints for updating or deleting a
-        user, only signup and login.
+        Cannot edit or delete profile.
       </p>
     </div>
   );

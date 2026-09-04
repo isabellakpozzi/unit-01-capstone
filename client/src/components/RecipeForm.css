@@ -27,6 +27,7 @@
 
 .repeatable-row input {
   width: auto;
+  min-width: 0;
 }
 
 .repeatable-row-quantity {

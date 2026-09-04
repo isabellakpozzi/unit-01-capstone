@@ -3,26 +3,14 @@
   flex-direction: column;
   align-items: center;
   gap: var(--spacing-xs);
-}
-
-.logo-mark {
-  display: flex;
-  align-items: center;
-  gap: 2px;
-  font-family: var(--font-heading);
-  font-size: var(--font-size-lg);
-  font-weight: 700;
+  font-size: var(--font-size-lg); 
   color: var(--color-text);
 }
 
-.logo-mark span[aria-hidden] {
-  font-size: 1em;
-  line-height: 1;
-  transform: rotate(-10deg);
-}
-
-.logo-word {
-  letter-spacing: 0.01em;
+.logo-svg {
+  height: 1.4em;
+  width: auto;
+  display: block;
 }
 
 .logo-tagline {
